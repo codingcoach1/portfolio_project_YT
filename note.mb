@@ -1,0 +1,132 @@
+Bahut badhiya Amit!
+Agar tum querySelector, innerHTML, style, addEventListener jaise DOM basics jaante ho, to tum kuch mini-projects bana sakte ho jo tumhari DOM understanding ko next level par le jayenge.
+
+Yeh rahe best beginner DOM project ideas — sab simple aur 1–2 hour me ban jayenge:
+
+🔥 1. Light / Dark Mode Toggle
+
+Concepts: querySelector, style, addEventListener
+Task: Ek button banaye → click karte hi pura page dark mode me ho jaye.
+
+Example:
+
+Button text: “Dark Mode ON”
+
+Body ka background black
+
+Text color white
+
+Dobara click → normal ho jaye
+
+🔥 2. Live Character Counter (Instagram style)
+
+Concepts: querySelector, innerHTML
+Task:
+
+Ek input box
+
+Neeche live counter: “0/100 characters”
+
+Color change jab limit cross ho
+
+🔥 3. Hide / Show Password Button
+
+Concepts: querySelector, addEventListener, input type toggle
+Task:
+
+Password field
+
+Ek button → “Show / Hide Password”
+
+Click par password visible ho & button text change ho
+
+🔥 4. Image Slider (Next / Prev Buttons)
+
+Concepts: innerHTML, style, event listener
+Task:
+
+3–4 images ka array
+
+Next/Prev buttons
+
+Display image change ho
+
+🔥 5. Counter App (0 → Increase / Decrease / Reset)
+
+Concepts: innerHTML, click event
+Task:
+
+Number (default 0)
+
++, –, Reset buttons
+
+Background color change jab number negative ho
+
+🔥 6. Simple Calculator (DOM Based)
+
+Concepts: querySelector, innerHTML
+Task:
+
+Buttons → 1,2,3,+,-,=
+
+Screen me output show kare
+
+Simple addition/subtraction
+
+🔥 7. Color Picker / Random Color Generator
+
+Concepts: style.backgroundColor, random colors
+Task:
+
+Button → “Generate Color”
+
+Page ka background random hex color ban jaye
+
+Neeche color code show ho: #a3f2d1
+
+🔥 8. Todo List (Add/Delete items)
+
+Concepts: innerHTML, createElement, events
+Task:
+
+Input me text likho
+
+“Add” button → list me item add ho
+
+Har item ke side me “Delete” button
+
+🔥 9. BMI Calculator
+
+Concepts: innerHTML, event listener
+Task:
+
+Height + weight input
+
+Button → Calculate
+
+Output: Healthy / Overweight / Underweight
+
+🔥 10. Traffic Light Simulation
+
+Concepts: style, classList, events
+Task:
+
+Teen lights: red, yellow, green
+
+“Change Signal” button
+
+Click karte hi color cycle ho
+
+Red → Yellow → Green → Red
+
+⚡ Suggestion: Tum pehle 4 mini projects banao:
+
+Counter
+
+Light/Dark Mode
+
+Todo List
+
+Image Slider
+
+Inse DOM 80% clear ho jayega 🔥

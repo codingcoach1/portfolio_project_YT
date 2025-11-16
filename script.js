@@ -1,24 +1,34 @@
-let text = document.querySelector('#text');
-let count = document.querySelector('span');
-let warn = document.querySelector('p');
+let img = document.querySelector('img')
+let next = document.querySelector('#next')
+let pre = document.querySelector('#pre')
+let count = 0
 
-text.addEventListener('input', function () {
-    let length = text.value.length;
-    count.innerHTML = length;   // Count ALWAYS visible
+let pics = [
+    'https://images.unsplash.com/photo-1756291822310-ec60c0a4b0c5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1760570317569-4a2b1eddf174?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1761839258045-6ef373ab82a7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+];
 
-    // Limit cross — RED mode
-    if (length > 10) {
-        text.style.color = 'red';
-        count.style.color = 'red';
-        warn.innerHTML = `<span style="color:red">${length}</span>/100 - Limit Over`;
-        warn.style.color = 'red';
+
+
+next.addEventListener('click',function(){
+    img.setAttribute('src',`${pics[count]}`)
+    img.style.height = '300px'
+    img.style.width = '500px'
+    count++
+    if(count>pics.length-1){
+        count = 0
     }
-    // Limit normal — RESET mode
-    else {
-        text.style.color = 'black';
-        count.style.color = 'black';
-        if(length<=10)
-        warn.innerHTML = `<span>${length}</span>/100`;   
-        warn.style.color='white'
+    
+})
+pre.addEventListener('click',function(){
+    img.setAttribute('src',`${pics[count]}`)
+    img.style.height = '300px'
+    img.style.width = '500px'
+    count--
+    if(count<0){
+        count = pics.length-1
     }
-});
+    
+})
+

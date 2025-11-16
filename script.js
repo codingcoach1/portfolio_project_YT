@@ -1,16 +1,24 @@
-let btn = document.querySelector('button')
-let body = document.querySelector('body')
+let text = document.querySelector('#text');
+let count = document.querySelector('span');
+let warn = document.querySelector('p');
 
+text.addEventListener('input', function () {
+    let length = text.value.length;
+    count.innerHTML = length;   // Count ALWAYS visible
 
-btn.addEventListener('click',function(){
-    if(body.style.backgroundColor == 'black'){
-        body.style.backgroundColor = 'white';
-        btn.style.backgroundColor = 'black'
-        btn.style.color = 'white'
+    // Limit cross — RED mode
+    if (length > 10) {
+        text.style.color = 'red';
+        count.style.color = 'red';
+        warn.innerHTML = `<span style="color:red">${length}</span>/100 - Limit Over`;
+        warn.style.color = 'red';
     }
-    else{
-        body.style.backgroundColor = 'black';
-        btn.style.backgroundColor = 'white'
-        btn.style.color = 'black'
+    // Limit normal — RESET mode
+    else {
+        text.style.color = 'black';
+        count.style.color = 'black';
+        if(length<=10)
+        warn.innerHTML = `<span>${length}</span>/100`;   
+        warn.style.color='white'
     }
-})
+});
